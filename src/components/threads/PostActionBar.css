@@ -1,0 +1,44 @@
+.gb-post-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.gb-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: transparent;
+  border: 0;
+  padding: 8px 10px;
+  border-radius: 999px;
+
+  color: #9ca3af;
+  cursor: pointer;
+  user-select: none;
+}
+
+.gb-action-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #e5e7eb;
+}
+
+.gb-action-icon {
+  font-size: 18px;
+  line-height: 1;
+  display: inline-flex;
+}
+
+.gb-action-label {
+  font-size: 13px;
+  line-height: 1;
+}
+
+.gb-action-btn.is-liked {
+  color: #ef4444;
+}
+
+.gb-action-btn.is-liked:hover {
+  background: rgba(239, 68, 68, 0.12);
+}
