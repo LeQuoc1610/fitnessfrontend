@@ -165,7 +165,7 @@ export function ThreadCard({
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative z-[101]">
           <button
             type="button"
             onClick={() => setMenuOpen((s) => !s)}
@@ -176,7 +176,7 @@ export function ThreadCard({
           </button>
 
           {menuOpen && isSelf && (
-            <div className="absolute right-0 mt-2 w-40 overflow-hidden rounded-xl border border-border/60 bg-background/95 backdrop-blur shadow-neon">
+            <div className="absolute right-0 mt-2 w-40 overflow-hidden rounded-xl border border-border/60 bg-background/95 backdrop-blur shadow-neon z-[100] pointer-events-auto">
               <button
                 type="button"
                 className="w-full px-3 py-2 text-left text-xs font-semibold text-foreground hover:bg-background/60"

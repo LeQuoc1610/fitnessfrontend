@@ -32,6 +32,14 @@ async function parseJsonSafe(res: Response) {
 
 function toThreadItem(t: ApiThreadItem, currentUserId: string | null): ThreadItem {
   const isSelf = currentUserId ? String(t.author.uid) === String(currentUserId) : false;
+  console.log('toThreadItem debug:', { 
+    threadId: t.id, 
+    authorUid: t.author.uid, 
+    currentUserId, 
+    isSelf,
+    authorUidType: typeof t.author.uid,
+    currentUserIdType: typeof currentUserId
+  });
   return {
     id: t.id,
     authorUid: t.author.uid,
